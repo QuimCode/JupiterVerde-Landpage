@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #3e9f25;
+  --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #0c0091;
@@ -805,7 +805,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 75%);
+  background: color-mix(in srgb, var(--background-color), transparent 45%);
   position: absolute;
   inset: 0;
   z-index: 2;
