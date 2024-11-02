@@ -121,25 +121,100 @@
 
     </section><!-- /Hero Section -->
 
+
+
     <section>
 
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>PRODUCTOS</h2>
+        <div><span>Chequea Nuestros</span> <span class="description-title">Productos</span></div>
+      </div><!-- End Section Title -->
+
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
+        </ol> -->
+      
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="assets\img\jakob-creutz-9h3qZh8aS-M-unsplash.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets\img\mitch-fox-c8M-U6SJ8IM-unsplash.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets\img\lena-myzovets-hpClcP_yqw4-unsplash.jpg" alt="Third slide">
+        <!-- Item 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6">
+              <img class="d-block w-100" src="assets\img\festusca.webp" alt="First slide">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-start p-4">
+              <!-- Contenedor adicional para centrar mejor el contenido -->
+              <div class="item-content">
+                <h3>Heno de Festuca</h3>
+                <p class="fst-italic">
+                  Descripción: La festuca es un tipo de heno de pasto que se utiliza comúnmente para la alimentación de ganado. Es más económico y tiene un buen contenido de fibra, ideal para animales adultos que no necesitan un aporte alto de proteínas.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Precio: $1.500 por 5 kg.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Calidad: Media.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Dureza: Media. Es fibroso, pero no tan rígido, lo que facilita su consumo para todo tipo de ganado.</span></li>
+                </ul>
+                <hr>
+                <a href="https://contacto.com" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Item 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img class="d-block w-100" src="assets/img/mitch-fox-c8M-U6SJ8IM-unsplash.jpg" alt="Second slide">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-start p-4">
+              <!-- Contenedor adicional para centrar mejor el contenido -->
+              <div class="item-content">
+                <h3>Heno de Alfalfa</h3>
+                <p class="fst-italic">
+                  Descripción: El heno de alfalfa es rico en proteínas, vitaminas y calcio, ideal para animales en crecimiento o en producción como caballos y conejos. Tiene un color verde intenso y un aroma fresco.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Precio: $2.500 por 5 kg.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Calidad: Premium.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Dureza: Media. Fibroso pero suave, fácil de masticar para la mayoría de los animales.</span></li>
+                </ul>
+                <hr>
+                <a href="https://contacto.com" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img class="d-block w-100" src="assets/img/eric-prouzet-KwJtAfFgkOc-unsplash.jpg" alt="Third slide">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-start p-4">
+              <!-- Contenedor adicional para centrar mejor el contenido -->
+              <div class="item-content">
+                <h3>Heno de Avena</h3>
+                <p class="fst-italic">
+                  Descripción: El heno de avena es más fibroso, con menos contenido de proteínas que el de alfalfa, pero es excelente para la alimentación de caballos adultos y otros animales de pastoreo. Tiene un tono dorado claro.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Precio: $1.800 por 5 kg.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Calidad: Alta.</span></li>
+                  <li><i class="bi bi-check"></i> <span>Dureza: Alta. Su textura es más firme y densa, lo que proporciona mayor durabilidad.</span></li>
+                </ul>
+                <hr>
+                <a href="https://contacto.com" class="btn btn-primary">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Controles del carrusel -->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -377,6 +452,7 @@
     <!-- </section>/Stats Section -->
 
     <!-- Details Section -->
+
     <section id="details" class="details section">
 
       <!-- Section Title -->
@@ -456,7 +532,9 @@
 
       </div>
 
-    </section><!-- /Details Section -->
+    </section>
+
+    <!-- /Details Section -->
 
     <!-- Gallery Section -->
     <!-- <section id="gallery" class="gallery section"> -->
@@ -548,7 +626,7 @@
 
       </div> -->
 
-    </section><!-- /Gallery Section -->
+    <!-- </section>/Gallery Section -->
 
     <!-- Testimonials Section -->
     <!-- <section id="testimonials" class="testimonials section dark-background">
