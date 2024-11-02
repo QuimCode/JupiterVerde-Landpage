@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #dbdbdb; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #3f3f3f; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #8eac8a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -1743,15 +1743,12 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-/* .starter-section { */
-  /* Add your styles here */
-/* } */
 
 #carouselExampleIndicators {
   border: 5px solid #8eac8a; /* Verde claro */
   border-radius: 10px; /* Opcional: redondea los bordes del carrusel */
   max-width: 100%; /* Ajusta el tamaño máximo del carrusel al ancho disponible */
-  height: 600px; /* Fija una altura específica para el carrusel */
+  height: 535px; /* Fija una altura específica para el carrusel */
   overflow: hidden; /* Oculta cualquier desbordamiento */
 }
 
@@ -1806,4 +1803,21 @@ section,
 
 .item-content {
   width: 100%;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #8eac8a;
+  --bs-btn-border-color: #8eac8a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8eac8a;
+  --bs-btn-hover-border-color: ##8eac8a;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8eac8a;
+  --bs-btn-active-border-color: #8eac8a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #8eac8a;
+  --bs-btn-disabled-border-color: #8eac8a;
 }
