@@ -21,7 +21,7 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #040677; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #3f3f3f; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #8eac8a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -1743,8 +1743,42 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/* .starter-section { */
   /* Add your styles here */
+/* } */
+
+#carouselExampleIndicators {
+  border: 5px solid #8eac8a; /* Verde claro */
+  border-radius: 10px; /* Opcional: redondea los bordes del carrusel */
+  max-width: 100%; /* Ajusta el tamaño máximo del carrusel al ancho disponible */
+  height: 600px; /* Fija una altura específica para el carrusel */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.774); /* Fondo oscuro para mejor contraste */
+  border-radius: 10%; /* Círculo */
+  padding: 25px; /* Espacio alrededor del ícono */
+  font-size: 10px; /* Ajusta el tamaño si es necesario */
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
 }
 
 .carousel-item img {
@@ -1761,4 +1795,15 @@ section,
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5));
   z-index: 1;
+}
+
+.carousel-item .col-6 img {
+  height: 100%; /* Ajusta la altura de la imagen al contenedor */
+  object-fit: cover; /* Recorta y ajusta la imagen para cubrir el contenedor */
+  width: 100%; /* Asegura que ocupe toda la mitad izquierda */
+  border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
+}
+
+.item-content {
+  width: 100%;
 }
