@@ -982,29 +982,29 @@
           </div>
 
           <div class="col-lg-8">
-            <form 
-              name="contact" 
-              method="POST" 
-              data-netlify="true" 
-              class="php-email-form">
+            <form name="contact" method="POST" data-netlify="true" class="php-email-form">
           
               <!-- Campo hidden necesario para que Netlify procese el formulario -->
               <input type="hidden" name="form-name" value="contact">
           
               <div class="row gy-4">
                 <div class="col-md-6">
+                  <label for="name">Nombre:</label>
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
           
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="Your Email">
                 </div>
           
                 <div class="col-md-12">
+                  <label for="subject">Titulo Asunto:</label>
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
           
                 <div class="col-md-12">
+                  <label for="message">Mensaje:</label>
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
           
