@@ -1744,26 +1744,26 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 
+/* Estilos base del carrusel */
 #carouselExampleIndicators {
-  border: 5px solid #8eac8a; /* Verde claro */
-  border-radius: 10px; /* Opcional: redondea los bordes del carrusel */
-  max-width: 100%; /* Ajusta el tamaño máximo del carrusel al ancho disponible */
-  height: 535px; /* Fija una altura específica para el carrusel */
-  overflow: hidden; /* Oculta cualquier desbordamiento */
+  border: 5px solid #8eac8a;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 535px;
+  overflow: hidden;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.774); /* Fondo oscuro para mejor contraste */
-  border-radius: 10%; /* Círculo */
-  padding: 25px; /* Espacio alrededor del ícono */
-  font-size: 10px; /* Ajusta el tamaño si es necesario */
+  background-color: rgba(0, 0, 0, 0.774);
+  border-radius: 10%;
+  padding: 25px;
 }
 
 .carousel-control-next, .carousel-control-prev {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -1771,16 +1771,15 @@ section,
   width: 5%;
   padding: 0;
   color: #fff;
-  text-align: center;
-  background: 0 0;
+  background: transparent;
   border: 0;
-  opacity: .5;
-  transition: opacity .15s ease;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
 }
 
 .carousel-item img {
-  max-height: 900px; /* Ajusta esta altura a tu preferencia */
-  object-fit: cover; /* Para asegurarte de que la imagen se mantenga dentro del contenedor sin deformarse */
+  max-height: 900px;
+  object-fit: cover;
 }
 
 .carousel-item::before {
@@ -1795,10 +1794,10 @@ section,
 }
 
 .carousel-item .col-6 img {
-  height: 100%; /* Ajusta la altura de la imagen al contenedor */
-  object-fit: cover; /* Recorta y ajusta la imagen para cubrir el contenedor */
-  width: 100%; /* Asegura que ocupe toda la mitad izquierda */
-  border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .item-content {
@@ -1811,7 +1810,7 @@ section,
   --bs-btn-border-color: #8eac8a;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #8eac8a;
-  --bs-btn-hover-border-color: ##8eac8a;
+  --bs-btn-hover-border-color: #8eac8a;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #8eac8a;
@@ -1821,3 +1820,48 @@ section,
   --bs-btn-disabled-bg: #8eac8a;
   --bs-btn-disabled-border-color: #8eac8a;
 }
+
+/* Estilos específicos para pantallas menores a 1910px */
+@media (max-width: 1910px) {
+  /* Ocultar los controles del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  /* Ajustes para que el carrusel funcione como una fila de tarjetas */
+  #carouselExampleIndicators {
+    display: flex;
+    gap: 20px; /* Espacio entre tarjetas */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap; /* Las tarjetas estarán en una sola fila */
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 300px; /* Ancho de cada tarjeta */
+  }
+}
+
+/* Estilos para dispositivos móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    display: block;
+    overflow-x: visible;
+    padding: 10px;
+  }
+
+  .carousel-inner {
+    display: block; /* Colocar tarjetas una debajo de la otra */
+  }
+
+  .carousel-item {
+    width: 100%; /* Ancho completo en móviles */
+    margin-bottom: 20px; /* Separación entre tarjetas */
+  }
+}
+
