@@ -1,0 +1,12 @@
+# Ignorar archivos de entorno
+.env
+
+# Ignorar dependencias (si usas Node.js)
+node_modules/
+
+# Ignorar archivos de sistema
+.DS_Store
+thumbs.db
+
+# Ignorar configuración de editor de texto
+.vscode/
